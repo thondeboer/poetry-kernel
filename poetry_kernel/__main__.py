@@ -30,7 +30,7 @@ def main():
         raise RuntimeError("Cannot start Poetry kernel: couldn't find pyproject.toml")
 
     cmd = [
-        "poetry", "run",
+        f"{str(Path.home())}/.local/bin/poetry", "run",
         "python", "-m", "ipykernel_launcher",
         *sys.argv[1:],
     ]

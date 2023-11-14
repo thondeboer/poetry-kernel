@@ -5,7 +5,7 @@ import tempfile
 def _write_kernelspec(dir):
     spec = {
         "argv": [
-            "python", "-m", "poetry_kernel",
+            "python3", "-m", "poetry_kernel",
             "-f", "{connection_file}",
         ],
         "display_name": "Poetry",
