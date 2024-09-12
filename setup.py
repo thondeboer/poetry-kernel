@@ -39,7 +39,7 @@ with open(os.path.join(current_dir, "README.md")) as fp:
 
 setup(
     name="poetry-kernel",
-    version="0.1.4",
+    version="0.1.5",
 
     # Package metadata
     author="Blue Heron, Inc.",
@@ -66,7 +66,6 @@ setup(
     python_requires=">=3.7",
     install_requires=[
         "jupyter-client >= 7.0.1",
-        "colorama >= 0.4.4",
     ],
     **setup_args,
 )
